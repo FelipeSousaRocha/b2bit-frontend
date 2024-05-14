@@ -1,35 +1,39 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Guia Passo a Passo: Executando a Aplicação Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pré-requisitos
 
-Currently, two official plugins are available:
+Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js e npm (Node Package Manager)
+- Git (opcional, se você quiser clonar o repositório do GitHub)
 
-## Expanding the ESLint configuration
+## Passo 1: Clonar o repositório
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/FelipeSousaRocha/b2bit-frontend.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-=======
-# b2bit-frontend
-Projeto de vaga de frontend
->>>>>>> c9e26034ca463d113095cf16bda09f5f719cf3d5
+## Passo 2: Acessar o diretório do projeto
+```bash
+cd b2bit-frontend
+```
+
+## Passo 3: Instalar as dependências
+```bash
+npm install
+```
+
+## Passo 4: Rodar a aplicação em modo de desenvolvimento
+```bash
+npm run dev
+```
+
+## Passo 5: Construir a aplicação para produção
+```bash
+npm run build
+```
+
+## Passo 6: Executar testes
+```bash
+npm test
+```
